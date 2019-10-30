@@ -1,0 +1,106 @@
+\documentclass[a4paper,12pt,twoside]{report}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multirow, array} 
+\usepackage{chngcntr}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{cite}
+\usepackage{adjustbox}
+\usepackage[table]{xcolor}
+
+
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=page,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
+
+\title{}
+\begin{document}
+\begin{center}
+\thispagestyle{empty}
+\fontsize{12pt}{12pt}\selectfont 
+
+%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\textbf {\huge Diseño y calibración de un telescopio de muones híbrido para estudios vulcanológicos.}
+
+
+\vspace{3cm}
+
+{\large \textbf{Autor:}}
+
+\vspace{0.5cm}
+
+\large Jesús Peña Rodríguez
+
+\vspace{3cm}
+{\large \textbf{Director}}\\
+\vspace{0.5cm}
+{\large Luis A. Núñez}\\
+\vspace{0.5cm}
+{\large \textbf{Codirector}}\\
+\vspace{0.5cm}
+{\large Hernán Asorey}
+\vspace{3cm}
+
+
+\normalsize
+\large Presentado como requisito del programa de 
+\linebreak
+\large Doctorado en Ciencias Naturales - Física
+
+\vspace{4cm}
+
+\large Universidad Industrial de Santander\\
+
+\large  Facultad de Ciencias \\
+
+\large  Escuela de Física - Abril 2019
+    
+  \end{center}
+\large
+
+
+\newpage
+%%%%%%%%%% CONTENIDO %%%%%%%
+
+\tableofcontents % indice de contenidos
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lista de figuras} % para que aparezca en el indice de contenidos
+\listoffigures % indice de figuras
+
+
+\input{Problem/Problem}
+\input{Justification/Justification}
+\input{Objectives/Objectives}
+\input{Cosmic_Rays/Muons}
+\input{State/State}
+\input{Methodology/Methodology.tex}
+%\input{Plan/Plan}
+\input{Schedule/Schedule.tex}
+\input{Founding/Founding.tex}
+
+%\input{Actual/Actual}
+%\input{Conclusions/Conclusions}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%% Bibliografia %%%%%%%%%%%%%%%%%%%%%5
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliografía}%para que aparezca en la tabla de contenidos
+\bibliographystyle{unsrt}
+\bibliography{Bibliography/MuTe.bib}
+%Archivo con las referencias bibliográficas, creado en JabRef (o manualmente)
+
+\end{document}
